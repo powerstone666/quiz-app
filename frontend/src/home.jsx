@@ -71,7 +71,7 @@ catch(err){
         <>
         {loading?( <h1 className="text-2xl mt-4">Loading...</h1>):
         (
-      <button className="bg-black w-56 text-white px-4 py-2 rounded-lg mt-8 cursor-pointer " onClick={handleSubmit}>Start Quiz</button>
+      <button className="bg-black w-56 text-white px-4 py-2 rounded-lg mt-8 cursor-pointer " onClick={handleSubmit}>View Solutions</button>
         )}
       </>
       )
