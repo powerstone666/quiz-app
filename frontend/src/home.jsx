@@ -14,7 +14,7 @@ const navigate=useNavigate();
     multiple: false,
     onDrop: (acceptedFiles) => {
         if (acceptedFiles.length > 0) {
-            console.log(acceptedFiles[0]);
+           
           setPdf(acceptedFiles[0]); 
         
         }
@@ -25,7 +25,7 @@ const navigate=useNavigate();
 const handleSubmit=async ()=>{
     try{
     setLoading(true);
-    const res= await axios.post("https://quiz-app-beta-opal.vercel.app/api/upload",pdf,{
+    const res= await axios.post("https://quiz-app-eight-pink.vercel.app/api/upload",pdf,{
         headers:{
             "Content-Type":"application/pdf"
         }
