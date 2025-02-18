@@ -12,7 +12,6 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("questions", JSON.stringify(questions));
-    console.log("Updated questions in App:", questions);
   }, [questions]);
 
   return (

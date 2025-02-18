@@ -12,7 +12,9 @@ const corsOptions = {
 server.use(cors(corsOptions));
 server.use(express.raw({ type: "application/pdf", limit: "10mb" }))
 
-
+server.get("/",(req,res)=>{
+    res.send("status:200")
+})
 server.post('/api/upload',async (req,res)=>{
     
    const p=await Gemini(req.body);

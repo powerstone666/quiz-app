@@ -25,7 +25,7 @@ const navigate=useNavigate();
 const handleSubmit=async ()=>{
     try{
     setLoading(true);
-    const res= await axios.post("http://localhost:3000/api/upload",pdf,{
+    const res= await axios.post("https://quiz-app-beta-opal.vercel.app/api/upload",pdf,{
         headers:{
             "Content-Type":"application/pdf"
         }
